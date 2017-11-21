@@ -11,10 +11,14 @@ header {
 
 nav {
 	background-color: #00A6B3;
-	color: #FFFFFF;
 	padding: 20px 0;
 }
 
+nav a {
+	margin: 0 20px;
+	color: #fff;
+	border-bottom: 2px solid transparent;
+}
 main {
 	margin: 35px 0 auto;
 }

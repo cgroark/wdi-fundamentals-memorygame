@@ -29,7 +29,7 @@ var checkForMatch = function(){
 		alert("You found a match!");
   } else {
 		alert("Sorry, try again.");
-}
+  } 
 }
 
 var flipCard = function(){
@@ -40,7 +40,7 @@ var flipCard = function(){
 	console.log(cards[cardId].cardImage);
 	console.log(cards[cardId].suit);
 	if (cardsInPlay.length ===2) {
-	checkForMatch();
+	setTimeout(checkForMatch, 100)();
 }
 }
 
