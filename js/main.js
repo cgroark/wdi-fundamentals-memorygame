@@ -29,8 +29,9 @@ var checkForMatch = function(){
 		alert("You found a match!");
   } else {
 		alert("Sorry, try again.");
-  } 
+  }
 }
+
 
 var flipCard = function(){
 	var cardId = this.getAttribute("data-id");
@@ -40,10 +41,9 @@ var flipCard = function(){
 	console.log(cards[cardId].cardImage);
 	console.log(cards[cardId].suit);
 	if (cardsInPlay.length ===2) {
-	setTimeout(checkForMatch, 100)();
+	setTimeout(checkForMatch, 220)();
 }
 }
-
 
 var createBoard = function(){
 	for (var i = 0; i < cards.length; i++) {
@@ -54,6 +54,8 @@ var createBoard = function(){
 		document.getElementById("game-board").appendChild(cardElement);
 	}
 }
+
+
 
 createBoard();
 
